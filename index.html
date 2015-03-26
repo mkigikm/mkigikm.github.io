@@ -5,15 +5,17 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet'
       type='text/css'>
+    <script src="vendor/jquery-2.1.3.min.js"></script>
+    <script src="tab-navigation.js"></script>
   </head>
   <body>
     <h1 class="header">Matthew Hicks</h1>
 
       <nav class="clearfix">
-        <a onclick="javascript:void(0)">PORTFOLIO</a>
-        <a onclick="javascript:void(0)">HOME</a>
+        <a onclick="javascript:void(0)" id="portfolio-link">PORTFOLIO</a>
+        <a onclick="javascript:void(0)" id="home-link" class="active">HOME</a>
       </nav>
-      <section class="home clearfix" style="display:none">
+      <section class="home clearfix">
         <h2>Hello</h2>
         <p>
           I'm Matt, a web developer based in New York. I like writing readable
@@ -34,7 +36,7 @@
           <a href="mailto:mkigikm@gmail.com" title="mkigikm@gmail.com">mkigikm@gmail.com</a>.
         </p>
       </section>
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <h2>My portfolio</h2>
 
         <article class="clearfix">

@@ -35,17 +35,23 @@ nav {
   padding: 10px 10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  background: #44f;
   font-weight: 700;
-  background: pink;
 }
 
 nav > a {
   display: block;
   float: right;
+  color: #fff;
+  cursor: pointer;
 }
 
 nav > a:last-child {
   margin-right: 20px;
+}
+
+.active {
+  color: #000;
 }
 
 section {
@@ -55,6 +61,8 @@ section {
   padding: 5px 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  max-height: 600px;
+  overflow: scroll;
 }
 
 h2 {
@@ -79,4 +87,8 @@ h2 {
 
 article {
   margin: 20px 0;
+}
+
+.hidden {
+  display: none;
 }
