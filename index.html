@@ -2,40 +2,79 @@
 <html>
   <head>
     <title>Matthew Hicks</title>
-    <style>
-    .header {
-      margin: 10px;
-      text-align: center;
-    }
-    .main {
-      margin: 0 auto;
-      width: 500px;
-    }
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet'
+      type='text/css'>
   </head>
   <body>
-    <h1 class="header">Hi, I'm Matt</h1>
+    <h1 class="header">Matthew Hicks</h1>
 
-      <section class="main">
+      <nav class="clearfix">
+        <a onclick="javascript:void(0)">PORTFOLIO</a>
+        <a onclick="javascript:void(0)">HOME</a>
+      </nav>
+      <section class="home clearfix" style="display:none">
+        <h2>Hello</h2>
+        <p>
+          I'm Matt, a web developer based in New York. I like writing readable
+          code, searching for new monospaced fonts, and dangling my feet off of
+          cliffs. I've worked with lots of technologies, but lately I've been
+          using:
+
+        </p>
+        <img class="me" src="savage_gulf.jpg"><ul>
+          <li><a href="http://rubyonrails.org/">Ruby on Rails</a></li>
+          <li><a href="http://backbonejs.org/">Backbone.js</a></li>
+        </ul>
+        <p>
+          Here's my <a href="resume.pdf">resume</a> if want a deeper dive.
+        </p>
+        <p>
+          If you'd like to work with or talk about things, email me at
+          <a href="mailto:mkigikm@gmail.com" title="mkigikm@gmail.com">mkigikm@gmail.com</a>.
+        </p>
+      </section>
+      <section class="portfolio">
         <h2>My portfolio</h2>
-        <h3><a href="maze_generator/maze.html">The Amazing Maze Generator</a></h3>
-        <p>
-          Generates mazes using a randomized depth-first search. Support square and
-          hex mazes.
-        </p>
-        <h3><a href="game_of_life/ca.html">Cellular Automata Simulator</a></h3>
-        <p>
-          A cellular automata simulator that supports many ruleset including Conway's
-          famous game of life.
-        </p>
-        <h3><a href="codesteroids/">Codesteroids</a></h3>
-        <p>
-          Avoid the rotating javascript keywords, and rid the world of bugs. Arrows turn your ship, z guided shot, and x shoots a spread shot. More features coming soon.
-        </p>
-        <h3><a href="http://codegeniuses.heroku.com">Code Genius</a></h3>
-        <p>
-          A source code annotation web app.
-        </p>
+
+        <article class="clearfix">
+          <img src="CodeGenius_shot.png" class="screenshot">
+          <h3><a href="http://codegeniuses.heroku.com">Code Genius</a></h3>
+          <p>
+            A source code annotation web app inspired by
+            <a href="http://www.genius.com">Genius</a>.
+          </p>
+        </article>
+
+        <article class="clearfix">
+          <img src="codesteroids_shot.png" class="screenshot">
+          <h3><a href="codesteroids/">Codesteroids</a></h3>
+          <p>
+            Avoid the rotating javascript keywords, and rid the world of bugs.
+          </p>
+        </article>
+
+        <article class="clearfix">
+          <h3><a href="http://www.github.com/mkigikm/chess">Chess</a></h3>
+          <p>
+            A console implementation of the classic board game.
+          </p>
+        </article>
+
+        <article class="clearfix">
+          <h3><a href="maze_generator/maze.html">The Amazing Maze Generator</a></h3>
+          <p>
+            Generates mazes using a randomized depth-first search.
+          </p>
+        </article>
+
+        <article class="clearfix">
+          <h3><a href="game_of_life/ca.html">Cellular Automata Simulator</a></h3>
+          <p>
+            A cellular automata simulator that supports many ruleset including Conway's
+            famous game of life.
+          </p>
+        </article>
       </section>
   </body>
 </html>
