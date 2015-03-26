@@ -18,7 +18,7 @@ html, body, section, article, nav, h1, h2, h3, a, p, {
 }
 
 body {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Noto Serif', serif;
   font-weight: 400;
   background: #ccc;
 }
@@ -37,6 +37,11 @@ nav {
   border-top-right-radius: 5px;
   background: #44f;
   font-weight: 700;
+  font-family: 'Arimo', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Arimo', sans-serif;
 }
 
 nav > a {
