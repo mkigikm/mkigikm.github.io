@@ -1,4 +1,12 @@
 $(function () {
+  $("#home-link").click(function (event) {
+    $("nav > a").removeClass("active");
+    $("#home-link").addClass("active");
+
+    $("section").addClass("hidden");
+    $("section.home").removeClass("hidden");
+  });
+
   $("#portfolio-link").click(function (event) {
     $("nav > a").removeClass("active");
     $("#portfolio-link").addClass("active");
@@ -7,11 +15,11 @@ $(function () {
     $("section.portfolio").removeClass("hidden");
   });
 
-  $("#home-link").click(function (event) {
+  $("#contact-link").click(function (event) {
     $("nav > a").removeClass("active");
-    $("#home-link").addClass("active");
+    $("#contact-link").addClass("active");
 
     $("section").addClass("hidden");
-    $("section.home").removeClass("hidden");
+    $("section.contact").removeClass("hidden");
   });
 });
